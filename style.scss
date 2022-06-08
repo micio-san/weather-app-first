@@ -1,0 +1,98 @@
+$whiteTrans:rgba(255, 255, 255, 0.742);
+$whiteTransMore:rgba(255, 255, 255, 0.153);
+$white:rgb(255, 255, 255);
+$fontFamily:'Indie Flower', cursive;
+$hover:#535ef5;
+$border: 2px solid $white;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $fontFamily;
+  background: rgb(87, 87, 87);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+width: 500px;
+height: 350px;
+background: linear-gradient( 250deg, $whiteTrans,$whiteTransMore );
+border-radius: 20px;
+padding:10px 20px ;
+color: $white;
+backdrop-filter: blur(5px);
+border-top: $border;
+border-left: $border;
+.search{
+    height: 40px;
+    background:linear-gradient( 250deg, $whiteTrans,$whiteTransMore );
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;    
+    border-top: $border;
+border-left: $border;
+input{
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 25px;
+    font-weight: 800;
+    color: $hover;
+
+}
+button{
+    position: absolute;
+    top: 0;
+    right: 0;  
+    width: 70px;
+    height: 40px;
+    font-size: 2rem;
+    color: $white;
+    line-height: 50px;
+    transition: .5s ease color;
+    cursor: pointer;
+    &:hover{
+        color: $hover; 
+    }
+}
+input,
+button{ 
+ border: none;
+ outline: none;
+ background: none;
+}
+}
+.weather{
+    text-transform: capitalize;
+    height: 80%;
+    .weather-display {
+        font-size: 20px;
+        .city-display{
+font-size: 35px;
+        }
+    }
+    .div{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    h1{
+        font-size: 45px;
+        margin: 20px 0px;
+    }
+    h3{
+        font-size: 25px;
+        margin: 5px 0px;  
+    }
+}
+}
